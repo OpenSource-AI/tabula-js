@@ -1,6 +1,6 @@
 # tabula-js
 
-Helps you extract CSV data tables from PDF files. It's a node wrapper for the mighty [tabula-java](https://github.com/tabulapdf/tabula-java) 0.9.0.
+Helps you extract CSV data tables from PDF files. It's a node wrapper for the mighty [tabula-java](https://github.com/tabulapdf/tabula-java) 1.0.1.
 
 ## Options
 
@@ -14,7 +14,7 @@ Options:
 area <AREA>           Portion of the page to analyze (top,left,bottom,right).
                        Example: "269.875,12.75,790.5,561". Default is entire page.
 
-columns <COLUMNS>     X coordinates of column boundaries. Example 
+columns <COLUMNS>     X coordinates of column boundaries. Example
                       "10.1,20.2,30.3"
 
 debug                 Print detected table areas instead ofprocessing.
@@ -23,20 +23,20 @@ guess                 Guess the portion of the page to analyze per page.
 
 silent                Suppress all stderr output.
 
-noSpreadsheet        Force PDF not to be extracted using spreadsheet-style 
-                     extraction 
+noSpreadsheet        Force PDF not to be extracted using spreadsheet-style
+                     extraction
                       (if there are ruling lines separating each cell, as in a PDF of an Excel spreadsheet)
 
 pages <PAGES>        Comma separated list of ranges, or all.
                       Examples: pages: "1-3,5-7", pages: "3" or pages: "all". Default is pages: "1"
 
-spreadsheet          Force PDF to be extracted using spreadsheet-style  
+spreadsheet          Force PDF to be extracted using spreadsheet-style
                      extraction
                      (if there are ruling lines separating each cell, as in a PDF of an Excel spreadsheet)
 
 password <PASSWORD>  Password to decrypt document. Default is empty
 
-useLineReturns       Use embedded line returns in cells. (Only in spreadsheet 
+useLineReturns       Use embedded line returns in cells. (Only in spreadsheet
                      mode.)
 ```
 
